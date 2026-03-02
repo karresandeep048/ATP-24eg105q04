@@ -1,0 +1,10 @@
+//synchronous
+execution of instructions by one by one
+// asynchronous
+//timer functions
+setTimeout(()=>{
+
+},timeout)
+setInterval(()=>{
+    console.log("timer")
+},2000)

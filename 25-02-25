@@ -1,0 +1,24 @@
+Call back Function: a function passed as an argument to another function
+    const and let keyword
+    tosorted array and sort
+    -->Error Handling
+    1.TYpe Error
+    2.Reference Error
+    name,message,stack Error
+    25/02/2026
+
+    static methods:objects dont contain staticmethods the static is called by class itself
+    private:#
+    -->optional chaining
+    by using the ternary operator
+    console.log(person.address?length) //undefined length
+    //spread operator
+    ...
+    // rest parameter
+    ...a
+    pack the valuues
+    after rest parameter is nothing is can be done
+    -->promises
+    //promise producer
+    //promise consumer
+    //i'll send 100000rs on tomoroww
