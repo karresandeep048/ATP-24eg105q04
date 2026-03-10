@@ -1,11 +1,9 @@
+
+//Asynchronous_operation
 futurecondition=false
 const promisesobj=new Promise((fulfilled,rejected)=>{
 setTimeout(()=>{
-
-
     if (futurecondition==true){
-
-    
 fulfilled("i have sent the money to u")
 }
 else{

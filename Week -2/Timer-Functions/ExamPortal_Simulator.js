@@ -1,11 +1,11 @@
 //Immediately show: “Exam submitted successfully”
         //After 2 seconds → show: “Evaluating answers…”
         //After 4 seconds → show: “Result: Pass”
-       console.log("Exam submited Succesfully")
+       console.log("Exam Submitted Succesfully")
         setTimeout(()=>{
-console.log("evaluationg Answers...")
+console.log("Evaluating Answers...")
 },2000)
 setTimeout(()=>
 {
-    console.log("result:pass")
+    console.log("result:Pass")
 },4000)

@@ -1,12 +1,8 @@
-
-        
 //Show “OTP Sent Successfully”
-        
-        //Start 10-second countdown
-        
-        //Allow resend only after countdown ends
+//Start 10-second countdown
+ //Allow resend only after countdown ends
 console.log("OTP sent Sucessfully")
-let seconds=5
+let seconds=10
  let Interval=setInterval(()=>{
 
     seconds--;

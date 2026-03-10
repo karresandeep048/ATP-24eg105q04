@@ -5,7 +5,7 @@ let fruits = ["apple", "banana"];
 //Add "orange" at the end using spread
 //Print both arrays
 let moreFruits=[...fruits,"orange"]
-console.log(fruits)
+console.log("Original Array:",fruits)
 
-console.log(moreFruits)
+console.log("Copied Array:",moreFruits)
 
