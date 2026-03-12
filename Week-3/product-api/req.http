@@ -1,0 +1,38 @@
+### Create Product
+POST http://localhost:6000/api/products
+Content-Type: application/json
+
+{
+  "productId": 101,
+  "productName": "iPhone 14",
+  "price": 45000,
+  "brand": "Apple"
+}
+
+###
+
+### Read All Products
+GET http://localhost:6000/api/products
+
+###
+
+### Read Product By productId
+GET http://localhost:6000/api/products/101
+
+###
+
+### Update Product By productId
+PUT http://localhost:6000/api/products/101
+Content-Type: application/json
+
+{
+     "productId": 101,
+  "productName": "iPhone 13",
+  "price": 50000,
+  "brand": "Apple"
+}
+
+###
+
+### Delete Product By productId
+DELETE http://localhost:6000/api/products/101
