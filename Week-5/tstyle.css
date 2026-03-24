@@ -1,0 +1,19 @@
+table{
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th{
+    background-color: lightgray;
+}
+body{
+    margin: 200px;
+   
+}
