@@ -16,7 +16,6 @@ const app = exp();
 
 // ✅ FINAL CORS CONFIG (handles everything)
 const allowedOrigins = [
-  "http://localhost:5173",
   "https://atp-24eg105q04-q2ta.vercel.app"
 
 ];
