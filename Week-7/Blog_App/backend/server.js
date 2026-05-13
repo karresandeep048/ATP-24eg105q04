@@ -14,7 +14,7 @@ config();
 const app = exp();
 
 app.use(cors({
-  origin: "https://blog-app-frontend-dun-seven.vercel.app",  
+  origin: "https://atp-24eg105q04.vercel.app",  
   credentials: true
 }));
 
