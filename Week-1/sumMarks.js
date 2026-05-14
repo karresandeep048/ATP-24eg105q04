@@ -1,3 +1,4 @@
+// Sum of marks
 let marks = [90, 78, 65, 98];
 let sum = 0;
 

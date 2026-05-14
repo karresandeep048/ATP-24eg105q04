@@ -1,4 +1,4 @@
-//Employees
+// Employee Data Operations
 const employees = [
   {
     eno: 101,

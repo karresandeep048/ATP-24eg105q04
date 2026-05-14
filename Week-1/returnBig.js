@@ -1,4 +1,5 @@
-function findBig(a, b, c) {
+ // Function: Find biggest of 3 numbers
+ function findBig(a, b, c) {
     let big = a;
 
     if (b > big) {

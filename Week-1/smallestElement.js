@@ -1,3 +1,4 @@
+// Find smallest element in array
 let marks2 = [90, 78, 65, 98];
 let smallest = marks2[0];
 

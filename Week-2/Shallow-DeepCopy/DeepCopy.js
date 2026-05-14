@@ -1,3 +1,4 @@
+//DEEP COPY
 const order = {
                   orderId: "ORD1001",
                   customer: {
