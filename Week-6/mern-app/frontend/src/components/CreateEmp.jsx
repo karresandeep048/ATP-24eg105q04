@@ -12,7 +12,7 @@ const inputStyle = {
   color: 'var(--clr-text)',
   marginBottom: '1rem',
   transition: 'all 0.2s',
-  fontFamily: 'var(--font-body)',
+  // fontFamily: 'var(--font-body)',
 };
 
 function FieldInput({ label, children }) {
@@ -167,7 +167,7 @@ function CreateEmp() {
                   type="submit"
                   style={{
                     flex: '2',
-                    background: 'var(--clr-accent)',
+                   
                     border: 'none',
                     borderRadius: '10px', padding: '14px',
                     color: '#fff', fontSize: '0.95rem',
@@ -178,7 +178,7 @@ function CreateEmp() {
                   }}
                   onMouseEnter={e => e.target.style.background = 'var(--clr-accent2)'}
                   onMouseLeave={e => e.target.style.background = 'var(--clr-accent)'}
-                >+ Add Employee</button>
+                >Add Employee</button>
               </div>
             </form>
           )}

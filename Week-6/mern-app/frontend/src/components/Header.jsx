@@ -9,7 +9,7 @@ function Header() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <div style={{
               width: '36px', height: '36px',
-              background: 'var(--clr-accent)',
+              
               borderRadius: '8px',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               fontFamily: 'var(--font-display)',
@@ -18,7 +18,7 @@ function Header() {
             <span style={{
               fontFamily: 'var(--font-display)',
               fontWeight: '700', fontSize: '1.2rem',
-              color: 'var(--clr-text)', letterSpacing: '-0.5px'
+              
             }}></span>
           </div>
 
@@ -27,7 +27,7 @@ function Header() {
             {[
               { to: "", label: "Home" },
               { to: "create-emp", label: "Add Employee" },
-              { to: "list", label: "All Employees" },
+              { to: "list", label: "List OF Employees" },
             ].map(({ to, label }) => (
               <NavLink
                 key={to}
@@ -40,9 +40,7 @@ function Header() {
                   fontWeight: '500',
                   textDecoration: 'none',
                   transition: 'all 0.2s',
-                  background: isActive ? 'var(--clr-accent)' : 'transparent',
-                  color: isActive ? '#fff' : 'var(--clr-muted)',
-                  border: isActive ? '1px solid var(--clr-accent)' : '1px solid transparent',
+                  
                 })}
               >
                 {label}

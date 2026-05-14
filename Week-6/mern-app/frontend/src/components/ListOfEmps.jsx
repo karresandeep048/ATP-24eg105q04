@@ -57,25 +57,13 @@ function ListOfEmps() {
           }}></h1>
           
         </div>
-        <button
-          onClick={() => navigate("/create-emp")}
-          style={{
-            background: 'var(--clr-accent)', color: '#fff',
-            border: 'none', borderRadius: '10px',
-            padding: '12px 22px', fontSize: '0.9rem',
-            fontWeight: '600', cursor: 'pointer',
-            fontFamily: 'var(--font-display)',
-            transition: 'all 0.2s',
-          }}
-          onMouseEnter={e => e.target.style.background = 'var(--clr-accent2)'}
-          onMouseLeave={e => e.target.style.background = 'var(--clr-accent)'}
-        >+ Add Employee</button>
+        
       </div>
 
       {/* Loading */}
       {loading && (
         <div style={{ textAlign: 'center', padding: '4rem 0', color: 'var(--clr-muted)' }}>
-          <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>⏳</div>
+          <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}></div>
           <p>Loading employees...</p>
         </div>
       )}
@@ -88,20 +76,12 @@ function ListOfEmps() {
           border: '1px dashed var(--clr-border)',
           borderRadius: '20px',
         }}>
-          <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>👥</div>
+          <div style={{ fontSize: '3rem', marginBottom: '1rem' }}></div>
           <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.3rem', color: 'var(--clr-text)', marginBottom: '0.5rem' }}>
             No employees yet
           </h3>
         
-          <button
-            onClick={() => navigate("/create-emp")}
-            style={{
-              background: 'var(--clr-accent)', color: '#fff',
-              border: 'none', borderRadius: '10px',
-              padding: '12px 24px', fontSize: '0.9rem',
-              fontWeight: '600', cursor: 'pointer',
-            }}
-          >+ Add First Employee</button>
+          
         </div>
       )}
 
@@ -166,9 +146,9 @@ function ListOfEmps() {
                 marginBottom: '1.2rem', fontSize: '0.85rem',
               }}>
                 {[
-                  { icon: '📧', val: emp.email },
-                  { icon: '📱', val: emp.mobile || '—' },
-                  { icon: '🏢', val: emp.companyName },
+                  {  val: emp.email },
+                  {  val: emp.mobile || '—' },
+                  {  val: emp.companyName },
                 ].map(({ icon, val }) => (
                   <div key={icon} style={{
                     display: 'flex', gap: '8px', alignItems: 'center',
