@@ -16,7 +16,7 @@ app.use("/emp-api", empRoute);
 
 const connectDB = async () => {
   try {
-    await connect(process.env.MONGO_URI);
+    await connect(process.env.DB_URL);  // ✅ changed to DB_URL
     console.log("DB connected");
 
     const PORT = process.env.PORT || 4000;
