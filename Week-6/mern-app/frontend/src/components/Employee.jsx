@@ -20,10 +20,10 @@ function Employee() {
   const initials = state.name?.split(" ").map(n => n[0]).join("").toUpperCase().slice(0, 2) || "?";
 
   const fields = [
-    { label: "Email", value: state.email, icon: "📧" },
-    { label: "Mobile", value: state.mobile || "—", icon: "📱" },
-    { label: "Designation", value: state.designation, icon: "💼" },
-    { label: "Company", value: state.companyName, icon: "🏢" },
+    { label: "Email", value: state.email,  },
+    { label: "Mobile", value: state.mobile || "—", },
+    { label: "Designation", value: state.designation,  },
+    { label: "Company", value: state.companyName,},
   ];
 
   return (
