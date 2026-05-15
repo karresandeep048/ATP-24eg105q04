@@ -54,7 +54,7 @@ function EditEmployee() {
   // ✅ Submit handler: PUT to correct API endpoint with employee's _id
   const onSubmit = async (data) => {
     try {
-      await axios.put(`http://localhost:4000/emp-api/employees/${state._id}`, data);
+      await axios.put(`${import.meta.env.VITE_API_URL}/emp-api/employees/${state._id}`, data);
       navigate("/list");
     } catch (err) {
       console.error("Update failed:", err);
