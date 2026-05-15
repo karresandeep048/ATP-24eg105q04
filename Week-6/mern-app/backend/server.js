@@ -4,17 +4,27 @@ import { empRoute } from "./API/empApp.js";
 import cors from "cors";
 
 const app = exp();
-app.use(cors({ origin: ["http://localhost:5173"] }));
+
+app.use(cors({ 
+  origin: [
+    "http://localhost:5173",
+    "https://mernapp-gray.vercel.app"
+  ] 
+}));
 app.use(exp.json());
 app.use("/emp-api", empRoute);
 
 const connectDB = async () => {
   try {
-    await connect("mongodb://localhost:27017/empdb");
+    await connect(process.env.MONGO_URI);
     console.log("DB connected");
-    app.listen(4000, () => console.log("server listening on port 4000.."));
+
+    const PORT = process.env.PORT || 4000;
+    app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
+
   } catch (err) {
-    console.log("err in DB connection", err.message);
+    console.log("Error in DB connection:", err.message);
+    process.exit(1);
   }
 };
 
