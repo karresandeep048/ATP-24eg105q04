@@ -10,10 +10,7 @@ import { adminApp } from "./APIs/AdminAPI.js";
 import { authorApp } from "./APIs/AuthorAPI.js";
 
 config();
-
 const app = exp();
-
-
 // ✅ FINAL CORS CONFIG (handles everything)
 const allowedOrigins = [
   "https://atp-24eg105q04-q2ta.vercel.app"

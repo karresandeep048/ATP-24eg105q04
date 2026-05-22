@@ -1,23 +1,37 @@
+# Week 1 – JavaScript Basics 
 
-## About
-This folder contains some basic JavaScript programs that I practiced while learning core concepts. The programs focus on simple logic building using conditions, loops, arrays, and functions.
-## Programs Included
-* Finding the largest number (2 numbers and 3 numbers)
-* Working with employee data using arrays of objects
-  * Adding a new employee
-  * Deleting an employee
-  * Updating marks
-* Finding sum of elements in an array
-* Searching an element in an array
-* Finding the smallest number in an array
-## Concepts Covered
-* if-else statements
-* for loops
-* functions
-* arrays and objects
-* basic array methods like splice(), find(), findIndex()
-## How to Run
-1. Make sure Node.js is installed
-2. Save the file as `app.js`
-3. Run the program using:
-   node app.js
+All programs in this folder are written in **JavaScript** and executed using **Node.js**
+
+## Programs
+
+| File | What I Built |
+|------|--------------|
+| `findBiggestOf2.js` | Finds the biggest among 2 numbers |
+| `findBiggestOf3.js` | Finds the biggest among 3 numbers |
+| `returnBig.js` | Biggest of 3 numbers using a function |
+| `returnsSum.js` | Returns sum of all elements in an array |
+| `sumMarks.js` | Calculates total marks from an array |
+| `smallestElement.js` | Finds the smallest element in an array |
+| `searchElement.js` | Searches an element and returns its index |
+| `employeeDetails.js` | Add / Remove / Update employee records |
+
+---
+
+##  What I Learned
+
+- `if-else` for comparisons
+- `for` loops to iterate arrays
+- Writing and calling **functions**
+- Working with **arrays of objects**
+- Array methods: `splice()`, `find()`, `findIndex()`
+## ▶How to Run
+
+```bash
+node filename.js
+```
+**Example:**
+```bash
+node employeeDetails.js
+```
+
+> Make sure Node.js is installed before running.
